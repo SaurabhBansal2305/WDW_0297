@@ -34,3 +34,21 @@
         <tr><td>BCA</td><td>60</td><td>&#8377;45,000</td></tr>
       </tbody>
     </table>
+     <form method="post" action="apply.php">
+      <fieldset>
+        <legend>Application Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="3">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option>B.Tech CSE</option>
+          <option>BCA</option>
+        </select>
+        <label for="stmt">Statement:</label>
+        <textarea id="stmt" name="stmt" rows="4" cols="50" maxlength="300"></textarea>
+        <p><button type="submit">Apply</button></p>
+      </fieldset>
+    </form>
+  </main>
